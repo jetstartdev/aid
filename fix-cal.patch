@@ -1,0 +1,15 @@
+diff --git a/next/components/Sidebar.tsx b/next/components/Sidebar.tsx
+index abcdefg..hijklmn 100644
+--- a/next/components/Sidebar.tsx
++++ b/next/components/Sidebar.tsx
+@@ -1,6 +1,6 @@
+-import CalendarSidebarIcon from '../components/icons/CalendarSidebarIcon';
++import CalendarSidebarIcon from '../../universal/packages/components/CalendarSidebarIcon';
+
+ const Sidebar = () => {
+   return (
+     <div className="sidebar">
+       <CalendarSidebarIcon />
+     </div>
+   );
+ };
