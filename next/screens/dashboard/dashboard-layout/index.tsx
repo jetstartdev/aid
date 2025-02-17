@@ -219,7 +219,7 @@ const Sidebar = () => {
   const handlePress = (index: number) => {
     setSelectedIndex(index);
     if (index === 4) { // Calendar icon index
-      router.push("/calendar");
+      router.push("/dashboard/calendar");
     }
   };
   
