@@ -41,6 +41,13 @@ type HeaderProps = {
 type Icons = {
   iconName: LucideIcon | typeof Icon;
 };
+// Add this import with other icon imports at the top
+// import { CalendarSidebarIcon } from "@/universal/packages/components/icons/calendar-sidebar";
+
+// Add this import with other icon imports at the top (around line 19)
+import { CalendarSidebarIcon } from "./assets/icons/calendar-sidebar";
+
+// Update the list array
 const list: Icons[] = [
   {
     iconName: HomeIcon,
@@ -53,6 +60,9 @@ const list: Icons[] = [
   },
   {
     iconName: HeartIcon,
+  },
+  {
+    iconName: CalendarSidebarIcon,  // Add the calendar icon
   },
 ];
 type BottomTabs = {
@@ -208,9 +218,11 @@ const Sidebar = () => {
   const [selectedIndex, setSelectedIndex] = useState<number>(0);
   const handlePress = (index: number) => {
     setSelectedIndex(index);
-    // router.push("/dashboard/dashboard-layout");
+    if (index === 4) { // Calendar icon index
+      router.push("/calendar");
+    }
   };
-
+  
   return (
     <VStack
       className="w-14 pt-5 h-full items-center border-r border-border-300"
@@ -225,10 +237,9 @@ const Sidebar = () => {
           >
             <Icon
               as={item.iconName}
-              className={`w-[55px] h-9 stroke-background-800 
-              ${index === selectedIndex ? "fill-background-800" : "fill-none"}
-
-              `}
+              className={`w-[55px] h-9 
+              ${index === selectedIndex ? "fill-background-800" : "fill-background-400"}
+            `}
             />
           </Pressable>
         );
@@ -354,7 +365,7 @@ const MainContent = () => {
       >
         <VStack className="p-4 pb-0 md:px-10 md:pt-6  w-full" space="2xl">
           <Heading size="2xl" className="font-roboto">
-            Welcome Alexander
+            Welcome JetStart! 
           </Heading>
 
           <Grid className="gap-5">

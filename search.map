@@ -1,0 +1,379 @@
+# Query: .map(
+# ContextLines: 1
+
+88 results - 23 files
+
+expo-app/components/ui/grid/index.tsx:
+  134        // get the colSpan of each child
+  135:       const colSpanArr = React.Children.map(children, (child: any) => {
+  136          const gridItemClassName = child?.props?._extra?.className;
+
+  161  
+  162:     const childrenWithProps = React.Children.map(children, (child, index) => {
+  163        if (React.isValidElement(child)) {
+
+expo-app/components/ui/skeleton/index.tsx:
+  106            >
+  107:             {Array.from({ length: _lines }).map((_, index) => (
+  108                <Skeleton
+
+expo-app/components/ui/skeleton/index.web.tsx:
+  71            >
+  72:             {Array.from({ length: _lines }).map((_, index) => (
+  73                <div
+
+expo-app/screens/dashboard/dashboard-layout/index.tsx:
+  216      >
+  217:       {list.map((item, index) => {
+  218          return (
+
+  274      >
+  275:       {footerIcons.map(
+  276          (
+
+  358            <Grid className="gap-5">
+  359:             {HeadingCards.map((item, index) => {
+  360                return (
+
+  420                  <Divider />
+  421:                 {HolidaysCards.map((item, index) => {
+  422                    return (
+
+  457                  <Divider />
+  458:                 {LeavesCards.map((item, index) => {
+  459                    return (
+
+  521                  <Divider />
+  522:                 {ColleaguesCards.map((item, index) => {
+  523                    return (
+
+  562                  <Divider />
+  563:                 {ColleaguesCards.map((item, index) => {
+  564                    return (
+
+expo-app/screens/news-feed/news-and-feed/index.tsx:
+  184      >
+  185:       {list.map((item, index) => {
+  186          return (
+
+  233      >
+  234:       {footerIcons.map(
+  235          (
+
+  324            <VStack className="w-full" space="2xl">
+  325:             {BLOGS_DATA.map((item, index) => {
+  326                return (
+
+  361                  <VStack className="h-full" space="md">
+  362:                   {WORLD_DATA.map((item, index) => {
+  363                      return (
+
+  392                  <VStack className="h-full" space="md">
+  393:                   {CREATORS_DATA.map((item, index) => {
+  394                      return (
+
+expo-app/screens/profile-screens/profile/index.tsx:
+  192            <Text className="text-typography-600 px-4 py-2">SETTINGS</Text>
+  193:           {SettingsList.map((item, index) => {
+  194              return (
+
+  233            <Text className="text-typography-600 px-4 py-2">RESOURCES</Text>
+  234:           {ResourcesList.map((item, index) => {
+  235              return (
+
+  317      >
+  318:       {footerIcons.map(
+  319          (
+
+  494                <>
+  495:                 {userData.map((item, index) => {
+  496                    return (
+
+  580              <VStack className="py-2 px-4 border rounded-xl border-border-300 justify-between items-center">
+  581:               {accountData.map((item, index) => {
+  582                  return (
+
+  604              <VStack className="py-2 px-4 border rounded-xl border-border-300 justify-between items-center">
+  605:               {accountData.map((item, index) => {
+  606                  return (
+
+next/components/ui/grid/index.tsx:
+  134        // get the colSpan of each child
+  135:       const colSpanArr = React.Children.map(children, (child: any) => {
+  136          const gridItemClassName = child?.props?._extra?.className;
+
+  161  
+  162:     const childrenWithProps = React.Children.map(children, (child, index) => {
+  163        if (React.isValidElement(child)) {
+
+next/components/ui/skeleton/index.tsx:
+  106            >
+  107:             {Array.from({ length: _lines }).map((_, index) => (
+  108                <Skeleton
+
+next/components/ui/skeleton/index.web.tsx:
+  71            >
+  72:             {Array.from({ length: _lines }).map((_, index) => (
+  73                <div
+
+next/screens/dashboard/dashboard-layout/index.tsx:
+  218      >
+  219:       {list.map((item, index) => {
+  220          return (
+
+  276      >
+  277:       {footerIcons.map(
+  278          (
+
+  360            <Grid className="gap-5">
+  361:             {HeadingCards.map((item, index) => {
+  362                return (
+
+  424                  <Divider />
+  425:                 {HolidaysCards.map((item, index) => {
+  426                    return (
+
+  461                  <Divider />
+  462:                 {LeavesCards.map((item, index) => {
+  463                    return (
+
+  525                  <Divider />
+  526:                 {ColleaguesCards.map((item, index) => {
+  527                    return (
+
+  569                  <Divider />
+  570:                 {ColleaguesCards.map((item, index) => {
+  571                    return (
+
+next/screens/news-feed/news-and-feed/index.tsx:
+  184      >
+  185:       {list.map((item, index) => {
+  186          return (
+
+  233      >
+  234:       {footerIcons.map(
+  235          (
+
+  324            <VStack className="w-full" space="2xl">
+  325:             {BLOGS_DATA.map((item, index) => {
+  326                return (
+
+  361                  <VStack className="h-full" space="md">
+  362:                   {WORLD_DATA.map((item, index) => {
+  363                      return (
+
+  392                  <VStack className="h-full" space="md">
+  393:                   {CREATORS_DATA.map((item, index) => {
+  394                      return (
+
+next/screens/profile-screens/profile/index.tsx:
+  192            <Text className="text-typography-600 px-4 py-2">SETTINGS</Text>
+  193:           {SettingsList.map((item, index) => {
+  194              return (
+
+  233            <Text className="text-typography-600 px-4 py-2">RESOURCES</Text>
+  234:           {ResourcesList.map((item, index) => {
+  235              return (
+
+  317      >
+  318:       {footerIcons.map(
+  319          (
+
+  496                <>
+  497:                 {userData.map((item, index) => {
+  498                    return (
+
+  582              <VStack className="py-2 px-4 border rounded-xl border-border-300 justify-between items-center">
+  583:               {accountData.map((item, index) => {
+  584                  return (
+
+  606              <VStack className="py-2 px-4 border rounded-xl border-border-300 justify-between items-center">
+  607:               {accountData.map((item, index) => {
+  608                  return (
+
+universal/packages/components/ui/grid/index.jsx:
+  72          // get the colSpan of each child
+  73:         const colSpanArr = React.Children.map(children, (child) => {
+  74              const gridItemClassName = child?.props?._extra?.className;
+
+  89      }, [responsiveNumColumns, children]);
+  90:     const childrenWithProps = React.Children.map(children, (child, index) => {
+  91          if (React.isValidElement(child)) {
+
+universal/packages/components/ui/grid/index.tsx:
+  134        // get the colSpan of each child
+  135:       const colSpanArr = React.Children.map(children, (child: any) => {
+  136          const gridItemClassName = child?.props?._extra?.className;
+
+  161  
+  162:     const childrenWithProps = React.Children.map(children, (child, index) => {
+  163        if (React.isValidElement(child)) {
+
+universal/packages/components/ui/skeleton/index.tsx:
+  106            >
+  107:             {Array.from({ length: _lines }).map((_, index) => (
+  108                <Skeleton
+
+universal/packages/components/ui/skeleton/index.web.tsx:
+  71            >
+  72:             {Array.from({ length: _lines }).map((_, index) => (
+  73                <div
+
+universal/packages/screens/auth/splash-screen/index.jsx:
+  55                  <AvatarGroup>
+  56:                   {ProfileAvatars.slice(0, 2).map((avatar, index) => {
+  57                      return (
+
+  69                    })}
+  70:                   {ProfileAvatars.map((avatar, index) => {
+  71                      return (
+
+universal/packages/screens/dashboard/dashboard-layout/index.jsx:
+  174      >
+  175:       {list.map((item, index) => {
+  176          return (
+
+  230      >
+  231:       {footerIcons.map((item, index) => {
+  232          return (
+
+  301            <Grid className="gap-5">
+  302:             {HeadingCards.map((item, index) => {
+  303                return (
+
+  365                  <Divider />
+  366:                 {HolidaysCards.map((item, index) => {
+  367                    return (
+
+  402                  <Divider />
+  403:                 {LeavesCards.map((item, index) => {
+  404                    return (
+
+  466                  <Divider />
+  467:                 {ColleaguesCards.map((item, index) => {
+  468                    return (
+
+  510                  <Divider />
+  511:                 {ColleaguesCards.map((item, index) => {
+  512                    return (
+
+universal/packages/screens/dashboard/dashboard-layout/index.tsx:
+  217      >
+  218:       {list.map((item, index) => {
+  219          return (
+
+  275      >
+  276:       {footerIcons.map(
+  277          (
+
+  359            <Grid className="gap-5">
+  360:             {HeadingCards.map((item, index) => {
+  361                return (
+
+  423                  <Divider />
+  424:                 {HolidaysCards.map((item, index) => {
+  425                    return (
+
+  460                  <Divider />
+  461:                 {LeavesCards.map((item, index) => {
+  462                    return (
+
+  524                  <Divider />
+  525:                 {ColleaguesCards.map((item, index) => {
+  526                    return (
+
+  568                  <Divider />
+  569:                 {ColleaguesCards.map((item, index) => {
+  570                    return (
+
+universal/packages/screens/news-feed/news-and-feed/index.jsx:
+  152      >
+  153:       {list.map((item, index) => {
+  154          return (
+
+  198      >
+  199:       {footerIcons.map((item, index) => {
+  200          return (
+
+  277            <VStack className="w-full" space="2xl">
+  278:             {BLOGS_DATA.map((item, index) => {
+  279                return (
+
+  314                  <VStack className="h-full" space="md">
+  315:                   {WORLD_DATA.map((item, index) => {
+  316                      return (
+
+  345                  <VStack className="h-full" space="md">
+  346:                   {CREATORS_DATA.map((item, index) => {
+  347                      return (
+
+universal/packages/screens/news-feed/news-and-feed/index.tsx:
+  184      >
+  185:       {list.map((item, index) => {
+  186          return (
+
+  233      >
+  234:       {footerIcons.map(
+  235          (
+
+  324            <VStack className="w-full" space="2xl">
+  325:             {BLOGS_DATA.map((item, index) => {
+  326                return (
+
+  361                  <VStack className="h-full" space="md">
+  362:                   {WORLD_DATA.map((item, index) => {
+  363                      return (
+
+  392                  <VStack className="h-full" space="md">
+  393:                   {CREATORS_DATA.map((item, index) => {
+  394                      return (
+
+universal/packages/screens/profile-screens/profile/index.jsx:
+  159          <Text className="text-typography-600 px-4 py-2">SETTINGS</Text>
+  160:         {SettingsList.map((item, index) => {
+  161            return (
+
+  200          <Text className="text-typography-600 px-4 py-2">RESOURCES</Text>
+  201:         {ResourcesList.map((item, index) => {
+  202            return (
+
+  280      >
+  281:       {footerIcons.map((item, index) => {
+  282          return (
+
+  433  
+  434:               {userData.map((item, index) => {
+  435                  return (
+
+  512              <VStack className="py-2 px-4 border rounded-xl border-border-300 justify-between items-center">
+  513:               {accountData.map((item, index) => {
+  514                  return (
+
+  536              <VStack className="py-2 px-4 border rounded-xl border-border-300 justify-between items-center">
+  537:               {accountData.map((item, index) => {
+  538                  return (
+
+universal/packages/screens/profile-screens/profile/index.tsx:
+  192            <Text className="text-typography-600 px-4 py-2">SETTINGS</Text>
+  193:           {SettingsList.map((item, index) => {
+  194              return (
+
+  233            <Text className="text-typography-600 px-4 py-2">RESOURCES</Text>
+  234:           {ResourcesList.map((item, index) => {
+  235              return (
+
+  317      >
+  318:       {footerIcons.map(
+  319          (
+
+  496                <>
+  497:                 {userData.map((item, index) => {
+  498                    return (
+
+  582              <VStack className="py-2 px-4 border rounded-xl border-border-300 justify-between items-center">
+  583:               {accountData.map((item, index) => {
+  584                  return (
+
+  606              <VStack className="py-2 px-4 border rounded-xl border-border-300 justify-between items-center">
+  607:               {accountData.map((item, index) => {
+  608                  return (
